@@ -1,0 +1,22 @@
+{
+  "name": "change_time",
+  "description": "修改服务器时间",
+  "main": "index.js",
+  "authors": [
+    "李兴钢 <lishinko@qq.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "datetime"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
