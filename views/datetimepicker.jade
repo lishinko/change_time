@@ -1,3 +1,4 @@
+p 当前服务器时间：#{servertime}
 div.container
     div.row
         div.col-sm-6
@@ -7,14 +8,4 @@ div.container
                     span.input-group-addon
                         span.glyphicon.glyphicon-calendar
                 button#submit-time.btn.btn-default 提交
-        script.
-            $(function () {
-                $('#datetimepicker').datetimepicker({
-                    // locale: 'ru'
-                    format:"dddd, YYYY/MM/DD, HH:mm:ss z"
-                });
-                $('#submit-time').click( function(){
-                    var date = $('#datetimepicker :input').val();
-                    alert(date);
-                })
-            });
+        script(src='/public/javascripts/datepicker.js')
