@@ -18,5 +18,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "eonasdan-bootstrap-datetimepicker": "bs-datetimepicker#^4.17.37",
+    "bootstrap": "^3.3.6"
+  }
 }

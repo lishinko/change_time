@@ -1,0 +1,14 @@
+div.container
+    div.row
+        div.col-sm-6
+            div.form-group
+                div#datetimepicker.input-group.date
+                    input.form-control
+                    span.input-group-addon
+                        span.glyphicon.glyphicon-calendar
+        script.
+            $(function () {
+                $('#datetimepicker').datetimepicker({
+                    // locale: 'ru'
+                });
+            });
