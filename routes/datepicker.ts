@@ -20,6 +20,6 @@ router.get('/', function(req, res, next) {
     // {
     //     res.send(500, {newtime:"hello world"});
     // }
-    res.send({newtime:"hello world"});
+    res.send({newtime:"修改服务器时间成功，但是现在是自己的机器，所以根本就没有修改"});
 })
 module.exports = router;

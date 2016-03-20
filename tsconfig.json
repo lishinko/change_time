@@ -2,7 +2,7 @@
     "compilerOptions": {
         "module": "commonjs",
         "sourceMap": false,
-        "target": "ES6"
+        "target": "es6"
     },
     "files": [
       "public/javascripts/datepicker.ts",
