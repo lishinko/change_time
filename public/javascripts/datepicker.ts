@@ -1,11 +1,11 @@
 /// <reference path="../../typings/tsd.d.ts" />
 $(function () {
+    const dateFormat = "YYYY-MM-DD HH:mm:ss"; 
     $('#datetimepicker').datetimepicker({
-        format:"dddd, YYYY/MM/DD, HH:mm:ss z"
+        format:dateFormat
     });
     $('#submit-time').click( function(){
         const date = $('#datetimepicker :input').val();
-        alert(date);
         $.ajax({
             url: '/servertime',
             dataType: 'json',
@@ -14,8 +14,9 @@ $(function () {
             success: function (data, status) {
                 alert(data);
             },
-            
-            
-        })
+            error: function (data, status) {
+                alert(data);
+            }
+        });
     })
 });

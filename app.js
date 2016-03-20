@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use('/public',express.static(path.join(__dirname, 'public')));
 app.use('/bower_components',express.static(path.join(__dirname, 'bower_components')));
 
-app.use('/', datepicker);
+app.use('/servertime', datepicker);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
