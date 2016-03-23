@@ -20,5 +20,8 @@ router.get('/', function (req, res, next) {
     //     res.send(500, {newtime:"hello world"});
     // }
     res.send({ newtime: "修改服务器时间成功，但是现在是自己的机器，所以根本就没有修改" });
+    //res.write可以通过编译,因为它是node的api!但是不是express的!如果想发送消息到客户端,需要res.send()方法.或者write();end();方法对!!!
+    //res.write("hello world");
+    //res.end("sssssss");
 });
 module.exports = router;
