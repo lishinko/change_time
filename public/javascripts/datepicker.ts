@@ -1,4 +1,4 @@
-/// <reference path="../../typings/tsd.d.ts" />
+import * as _ from 'jquery';
 $(function () {
     const dateFormat = "YYYY-MM-DD HH:mm:ss"; 
     $('#datetimepicker').datetimepicker({
@@ -12,7 +12,7 @@ $(function () {
             data:{time:date},
             type: 'PUT',
             success: function (data, status) {
-                alert(data);
+                $('#current-time').text(data.newtime);
             },
             error: function (data, status) {
                 alert(data);

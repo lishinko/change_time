@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        //"moduleResolution": "node",
+        "sourceMap": false,
+        "target": "es6"
+    },
+    "files": [
+      //"public/javascripts/datepicker.ts",
+      "routes/datepicker.ts"
+   ]
+}

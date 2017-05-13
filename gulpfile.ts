@@ -1,4 +1,3 @@
-/// <reference path="typings/tsd.d.ts" />
 import * as gulp from 'gulp';
 import * as ts from 'gulp-typescript';
 // const ts = require('gulp-typescript');
@@ -9,7 +8,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('tsc', function() {
-    const tsProject = ts.createProject('tsconfig.json', {
+    const tsProject = ts.createProject('server.json', {
         typescript : require('typescript')
     });
     const tsResult = gulp.src(['public/javascripts/*.ts', 'routes/*.ts'])//tsProject.src() 
